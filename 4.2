@@ -1,0 +1,41 @@
+OOPS part2
+assignment 4.2
+public class TestShirt 
+ {
+ 
+ 	public static void main (String[] args)
+ 	{
+ 		 Shirt testShirt1=new Shirt(15,30,"cotton");
+ 		 Shirt testShirt2= new Shirt(13,28,"cotton");
+ 		 Shirt testShirt3= new Shirt(17,32,"sock");
+ 		 
+ 		 testShirt1.Printf();
+ 		 testShirt2.Printf();
+ 		 testShirt3.Printf();
+ 		 
+ 	}
+ }
+ class Shirt
+ {
+ 	public double collarSize;
+ 	public double sleeveLength;
+ 	public String material;
+ 
+ 	Shirt(double c,double s, String m)
+ 	{
+ 		 collarSize=c;
+ 		 sleeveLength=s;
+ 		 material=m;
+ 		 m="Cotton";
+ 
+ 	}
+ 	void Printf()
+ 	{
+ 		System.out.println("Collarsize = "+collarSize+"   "+"SleeveLength = "+sleeveLength+"   "+"Material = "+material);
+ 	}
+ }
+ //
+ output:
+ Collarsize = 15.0   SleeveLength = 30.0   Material = cotton
+Collarsize = 13.0   SleeveLength = 28.0   Material = cotton
+Collarsize = 17.0   SleeveLength = 32.0   Material = sock
